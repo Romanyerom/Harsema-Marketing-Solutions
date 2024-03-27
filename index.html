@@ -3,29 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roman Yerom Tech</title>
+    <title>Yerom Recipe Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Roman Yerom Tech</h1>
+        <h1>Yerom Recipe Hub</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <section id="search-bar">
+        <input type="text" placeholder="Search for recipes..." name="search">
+        <button type="submit">Search</button>
+    </section>
     <main>
-        <section>
-            <h2>Welcome to Roman Yerom Tech</h2>
-            <p>This is your go-to site for tech insights and guides.</p>
+        <section id="featured-recipes">
+            <h2>Featured Recipes</h2>
+            <div class="recipe">
+                <img src="recipe1.jpg" alt="Recipe 1">
+                <h3>Recipe 1 Title</h3>
+                <p>This is a brief description of Recipe 1.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="recipe">
+                <img src="recipe2.jpg" alt="Recipe 2">
+                <h3>Recipe 2 Title</h3>
+                <p>This is a brief description of Recipe 2.</p>
+                <a href="#">Read More</a>
+            </div>
+            <!-- Add more recipes as needed -->
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Roman Yerom Tech. All rights reserved.</p>
+        <p>&copy; 2024 Yerom Recipe Hub. All rights reserved.</p>
     </footer>
 </body>
 </html>
