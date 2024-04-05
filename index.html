@@ -3,34 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yerom Recipe Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <title>YeromRecipe Hub</title>
+    <style>
+        /* Add your CSS here */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .cover-image {
+            width: 100%;
+            height: 100vh;
+            background: url('your-cover-image-url.jpg') no-repeat center center/cover;
+        }
+
+        .intro-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff; /* Adjust based on your image */
+        }
+
+        .navigation {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px 0;
+            box-sizing: border-box;
+        }
+
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f44336; /* Sample color */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #c33d2e; /* Darker shade for hover effect */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="logo-path.jpg" alt="Yerom Recipe Hub Logo" id="logo">
-        <h1>Yerom Recipe Hub</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="categories">
-        <h2>Categories</h2>
-        <ul>
-            <li><a href="#">Asian</a></li>
-            <li><a href="#">Ethiopian</a></li>
-            <li><a href="#">European</a></li>
-            <!-- Add more categories as needed -->
-        </ul>
-    </section>
-    <!-- Your existing sections here -->
-    <footer>
-        <p>&copy; 2024 Yerom Recipe Hub. All rights reserved.</p>
-    </footer>
+
+    <div class="cover-image">
+        <div class="intro-content">
+            <h1>YeromRecipe Hub</h1>
+            <p>Discover, Cook, and Share - Reinventing Your Culinary Journey</p>
+            <a href="http://romanyerom.tech/" class="cta-button">Explore Recipes Now</a>
+        </div>
+    </div>
+    
+    <div class="navigation">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About Us</a>
+        <a href="your-deployed-project-link">Get Started</a>
+    </div>
+
+    <!-- Add additional sections here -->
+
 </body>
 </html>
