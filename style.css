@@ -1,90 +1,98 @@
-body, html {
+/* Resetting default browser styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
     width: 100%;
     height: 100%;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* A clean, modern sans-serif font */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark gray for text */
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-/* Background cover image styling */
-.cover-image {
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    background: url('your-cover-image-url.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-/* Intro content styles */
-.intro-content {
-    color: #ffffff; /* Light text for contrast */
-    text-align: center;
-    max-width: 600px; /* Optimal reading width */
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Dark background for legibility */
-    border-radius: 10px;
-}
-
-.intro-content h1 {
-    font-size: 2.5em; /* Responsive title size */
-    margin-bottom: 0.5em;
-}
-
-.intro-content p {
-    font-size: 1.2em; /* Slightly larger paragraph for emphasis */
-    margin-bottom: 1em;
-}
-
-/* Navigation bar styling */
+/* Navigation Styles */
 .navigation {
+    background-color: #fff; /* Light background for the navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
     z-index: 1000;
-    display: flex;
-    justify-content: space-around; /* Evenly space navigation links */
-    padding: 10px 0;
 }
 
 .navigation a {
-    color: #fff;
+    color: #333; /* Dark gray for links */
+    padding: 20px;
+    display: inline-block;
     text-decoration: none;
-    padding: 10px 15px;
-    text-transform: uppercase; /* Stylistic choice for nav links */
     font-weight: bold;
 }
 
-/* Call-to-action button styling */
+.navigation a:hover {
+    background-color: #f4f4f4; /* Light gray for hover state */
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1140px; /* Max width for content */
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.cover-image {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.intro-content, .features-section, .about-section {
+    padding: 60px 0; /* Spacing for sections */
+    text-align: center;
+}
+
+/* Typography */
+h1, h2, h3 {
+    margin-bottom: 20px; /* Space below headings */
+}
+
+p {
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+/* Buttons */
 .cta-button {
-    padding: 15px 30px;
-    background-color: #f44336; /* Vibrant call-to-action color */
+    background-color: #007bff; /* Bootstrap blue */
     color: #ffffff;
-    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    border: none;
     border-radius: 5px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.cta-button:hover, .cta-button:focus {
-    background-color: #c33d2e; /* Darken on hover/focus for interaction feedback */
-    transform: scale(1.05); /* Slightly enlarge on hover/focus */
-    outline: none; /* Remove focus outline for aesthetics; ensure accessible contrast ratio if modified */
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .intro-content h1 {
-        font-size: 2em; /* Slightly smaller title on small devices */
-    }
-
-    .navigation {
-        flex-direction: column; /* Stack navigation items on smaller screens */
-    }
-
     .navigation a {
-        padding: 10px; /* Adjust padding for stacked nav links */
+        display: block; /* Stack nav items under each other */
+        padding: 10px;
+    }
+
+    .cover-image {
+        height: 60vh; /* Shorter cover image on smaller screens */
+    }
+
+    .container, .intro-content, .features-section, .about-section {
+        padding: 30px 0; /* Less spacing on smaller screens */
     }
 }
