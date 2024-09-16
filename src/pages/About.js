@@ -1,13 +1,13 @@
 import React from 'react';
 
-function About() {
+const About = () => {
   return (
-    <div>
-      <h1>About Us</h1>
-      <p>Welcome to Harsema Marketing Solutions! We offer various marketing services tailored to meet the needs of modern businesses.</p>
-    </div>
+    <main>
+      <h1>About</h1>
+      <p>Learn more about Harsema Marketing Solutions and our mission.</p>
+    </main>
   );
-}
+};
 
 export default About;
 

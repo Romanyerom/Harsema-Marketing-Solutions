@@ -11,6 +11,7 @@ const App = () => {
   return (
     <Router>
       <div>
+        {/* Navigation Menu */}
         <nav>
           <a href="/">Home</a>
           <a href="/about">About</a>
@@ -19,14 +20,15 @@ const App = () => {
           <a href="/subscribe">Subscribe</a>
         </nav>
 
-        {/* Routes is now used instead of Switch */}
+        {/* Define Routes for each page */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/subscribe" element={<Subscription />} />
-          <Route path="*" element={<NotFound />} /> {/* Wildcard route for 404 */}
+          {/* Catch-all route for 404 */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>

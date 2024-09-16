@@ -1,14 +1,13 @@
 import React from 'react';
 
-function Contact() {
+const Contact = () => {
   return (
-    <div>
-      <h1>Contact Us</h1>
-      <p>Email: contact@harsema.com</p>
-      <p>Phone: +123-456-7890</p>
-    </div>
+    <main>
+      <h1>Contact</h1>
+      <p>Contact us for any inquiries at contact@harsemamarketing.com.</p>
+    </main>
   );
-}
+};
 
 export default Contact;
 
