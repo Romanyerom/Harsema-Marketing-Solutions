@@ -74,8 +74,15 @@
 
     <!-- React App will be injected here -->
     <div id="root"></div>
-    
-    <!-- The necessary JavaScript for the React app will be injected here during build -->
+
+    <script type="text/javascript">
+        // This script redirects to the index.html so that React Router can handle routing
+        const pathname = window.location.pathname;
+        if (pathname !== '/' && !pathname.startsWith('/harsema-marketing-solutions')) {
+            window.location.href = '/harsema-marketing-solutions/';
+        }
+    </script>
+
 </body>
 </html>
 
