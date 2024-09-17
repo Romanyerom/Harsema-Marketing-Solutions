@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 
 const Subscription = () => {
-  // Form state
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can add logic for form submission
     console.log(`Full Name: ${fullName}, Email: ${email}`);
   };
 
@@ -15,12 +13,10 @@ const Subscription = () => {
     <div style={styles.container}>
       {/* Subscription Box */}
       <div style={styles.box}>
-        {/* Subscribe Heading */}
         <h2 style={styles.heading}>Subscribe for our news</h2>
 
         {/* Subscription Form */}
         <form onSubmit={handleSubmit} style={styles.form}>
-          {/* Full Name Input */}
           <input
             type="text"
             placeholder="Full Name"
@@ -30,7 +26,6 @@ const Subscription = () => {
             required
           />
 
-          {/* Email Input */}
           <input
             type="email"
             placeholder="Email"
@@ -40,7 +35,6 @@ const Subscription = () => {
             required
           />
 
-          {/* Subscribe Button */}
           <button type="submit" style={styles.button}>
             Subscribe
           </button>
@@ -56,7 +50,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh', // Full viewport height to center the box vertically
+    height: '100vh',  // Full viewport height to center the box vertically
     backgroundColor: '#f7f7f7',
     padding: '20px',
   },
@@ -68,7 +62,6 @@ const styles = {
     textAlign: 'center',
     maxWidth: '400px',
     width: '100%',
-    transition: 'transform 0.3s ease', // Animation effect on hover
   },
   heading: {
     fontSize: '2rem',
@@ -91,17 +84,17 @@ const styles = {
     outline: 'none',
     transition: 'border-color 0.3s ease',
   },
-  inputFocus: {
-    borderColor: '#4B0082',
-  },
   button: {
     padding: '15px',
     fontSize: '1rem',
-    backgroundColor: '#4B0082', // Dark purple for the button
+    backgroundColor: '#4B0082',  // Dark purple for the button
     color: '#fff',
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
+    width: '100%',  // Full width for responsiveness
+    maxWidth: '200px',  // Limit width on larger screens
+    margin: '0 auto',   // Center the button horizontally
     transition: 'background-color 0.3s ease',
   },
   buttonHover: {
