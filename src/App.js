@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -13,11 +13,11 @@ const App = () => {
       <div>
         {/* Navigation Menu */}
         <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/services">Services</a>
-          <a href="/contact">Contact</a>
-          <a href="/subscribe">Subscribe</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/subscribe">Subscribe</Link>
         </nav>
 
         {/* Define Routes for each page */}
