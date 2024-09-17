@@ -6,13 +6,14 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Subscription from './pages/Subscription';
 import NotFound from './pages/NotFound';
+import Footer from './components/Footer';  // Import Footer component
 
 const App = () => {
   return (
     <Router>
-      <div>
+      <div style={styles.container}>
         {/* Navigation Menu */}
-        <nav>
+        <nav style={styles.nav}>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/services">Services</Link>
@@ -30,9 +31,25 @@ const App = () => {
           {/* Catch-all route for 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+
+        {/* Footer Component */}
+        <Footer />
       </div>
     </Router>
   );
+};
+
+const styles = {
+  container: {
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  nav: {
+    backgroundColor: '#4B0082',
+    padding: '10px',
+    textAlign: 'center',
+  },
 };
 
 export default App;
