@@ -6,7 +6,8 @@ const Services = () => {
       {/* Main Service Offering Section */}
       <section style={styles.section}>
         <h1 style={styles.mainHeading}>Our Service Offering</h1>
-        <p style={styles.text}>
+        {/* Centered Integrated marketing communications */}
+        <p style={styles.centeredText}>
           Integrated marketing communications
         </p>
         <p style={styles.text}>
@@ -96,6 +97,13 @@ const styles = {
     color: '#4B0082', // Dark purple
     marginBottom: '20px',
     textAlign: 'center',
+  },
+  centeredText: {
+    fontSize: '1.5rem',
+    color: '#333',
+    marginBottom: '15px',
+    textAlign: 'center', // Center the text
+    fontWeight: 'bold',
   },
   heading: {
     fontSize: '2rem',

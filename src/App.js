@@ -1,25 +1,19 @@
-import React from 'react';
-import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Subscription from './pages/Subscription';
 import NotFound from './pages/NotFound';
-import Footer from './components/Footer';  // Import Footer component
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 const App = () => {
   return (
     <Router>
       <div style={styles.container}>
-        {/* Navigation Menu */}
-        <nav style={styles.nav}>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/subscribe">Subscribe</Link>
-        </nav>
+        {/* Include the Header component */}
+        <Header />
 
         {/* Define Routes for each page */}
         <Routes>
@@ -44,11 +38,6 @@ const styles = {
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
-  },
-  nav: {
-    backgroundColor: '#4B0082',
-    padding: '10px',
-    textAlign: 'center',
   },
 };
 

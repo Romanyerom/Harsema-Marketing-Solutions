@@ -1,7 +1,6 @@
 import React from 'react';
 
-// Import the image (you can replace 'marketing-image.jpg' with the path to your image)
-import marketingImage from '../assets/marketing-image.jpg';
+import marketingImage from '../assets/Logo.JPG';
 
 const Home = () => {
   return (
@@ -11,13 +10,20 @@ const Home = () => {
         <h1 style={styles.title}>Harsema Marketing Solution</h1>
       </header>
 
-      {/* Image and Text Section */}
+      {/* Logo and Text Section */}
       <div style={styles.contentSection}>
-        {/* Image */}
+        {/* Logo Image */}
         <img src={marketingImage} alt="Marketing Strategy" style={styles.image} />
-        
+
         {/* Text Section */}
         <div style={styles.textSection}>
+          {/* Seth Godin Quote */}
+          <h2 style={styles.quote}>
+            "Marketing is no longer about the stuff that you make, but about the stories you tell."
+            <br />– Seth Godin
+          </h2>
+
+          {/* Our Promise Section */}
           <h2 style={styles.subheading}>Our Promise To You</h2>
           <p style={styles.text}>
             Our clients' success is at the heart of what we do, so we work to understand
@@ -57,7 +63,7 @@ const styles = {
     padding: '20px',
   },
   image: {
-    maxWidth: '400px',
+    maxWidth: '500px', // Larger size for the logo
     width: '100%',
     height: 'auto',
     borderRadius: '10px',
@@ -65,7 +71,13 @@ const styles = {
   },
   textSection: {
     maxWidth: '600px',
-    textAlign: 'left',
+    textAlign: 'justify', // Justified text alignment
+  },
+  quote: {
+    fontSize: '2rem',
+    color: '#4B0082',  // Dark Purple for the quote
+    marginBottom: '20px',
+    fontWeight: 'bold',
   },
   subheading: {
     fontSize: '2rem',

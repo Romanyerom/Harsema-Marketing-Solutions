@@ -3,10 +3,19 @@ import React, { useState } from 'react';
 const Subscription = () => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(`Full Name: ${fullName}, Email: ${email}`);
+    setIsSubmitting(true);
+
+    // Simulate an API call with a timeout
+    setTimeout(() => {
+      console.log(`Full Name: ${fullName}, Email: ${email}`);
+      setIsSubmitting(false);
+      setSubmitted(true);
+    }, 2000);
   };
 
   return (
@@ -15,30 +24,42 @@ const Subscription = () => {
       <div style={styles.box}>
         <h2 style={styles.heading}>Subscribe for our news</h2>
 
-        {/* Subscription Form */}
-        <form onSubmit={handleSubmit} style={styles.form}>
-          <input
-            type="text"
-            placeholder="Full Name"
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
-            style={styles.input}
-            required
-          />
+        {/* Feedback after submission */}
+        {submitted ? (
+          <p style={styles.successMessage}>Thank you for subscribing!</p>
+        ) : (
+          <form onSubmit={handleSubmit} style={styles.form}>
+            <input
+              type="text"
+              placeholder="Full Name"
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
+              style={styles.input}
+              required
+            />
 
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            style={styles.input}
-            required
-          />
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              style={styles.input}
+              required
+            />
 
-          <button type="submit" style={styles.button}>
-            Subscribe
-          </button>
-        </form>
+            <button
+              type="submit"
+              style={{
+                ...styles.button,
+                backgroundColor: isSubmitting ? '#777' : styles.button.backgroundColor,
+                cursor: isSubmitting ? 'not-allowed' : 'pointer',
+              }}
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? 'Submitting...' : 'Subscribe'}
+            </button>
+          </form>
+        )}
       </div>
     </div>
   );
@@ -50,7 +71,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh',  // Full viewport height to center the box vertically
+    height: '100vh', // Full viewport height to center the box vertically
     backgroundColor: '#f7f7f7',
     padding: '20px',
   },
@@ -68,6 +89,10 @@ const styles = {
     color: '#333',
     marginBottom: '20px',
     fontWeight: 'bold',
+  },
+  successMessage: {
+    fontSize: '1.5rem',
+    color: '#4B0082', // Success message in dark purple
   },
   form: {
     display: 'flex',
@@ -87,18 +112,15 @@ const styles = {
   button: {
     padding: '15px',
     fontSize: '1rem',
-    backgroundColor: '#4B0082',  // Dark purple for the button
+    backgroundColor: '#4B0082', // Dark purple for the button
     color: '#fff',
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
-    width: '100%',  // Full width for responsiveness
-    maxWidth: '200px',  // Limit width on larger screens
-    margin: '0 auto',   // Center the button horizontally
+    width: '100%', // Full width for responsiveness
+    maxWidth: '200px', // Limit width on larger screens
+    margin: '0 auto', // Center the button horizontally
     transition: 'background-color 0.3s ease',
-  },
-  buttonHover: {
-    backgroundColor: '#3A006A', // Darker shade on hover
   },
 };
 
