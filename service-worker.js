@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/harsema-marketing-solutions/precache-manifest.ec24bbf92607fe3f967e76f6b9326184.js"
+  "/harsema-marketing-solutions/precache-manifest.52e8e89e4bebc90e449bc2ca642dd503.js"
 );
 
 self.addEventListener('message', (event) => {
