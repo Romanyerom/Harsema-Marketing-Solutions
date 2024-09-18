@@ -16,24 +16,14 @@ const App = () => {
         {/* Include the Header component */}
         <Header />
 
-        {/* Navigation Links */}
+        {/* Navigation Links within the Header (use of <Link> to navigate) */}
         <nav>
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/services">Services</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link to="/subscribe">Subscribe</Link>
-            </li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/subscribe">Subscribe</Link></li>
           </ul>
         </nav>
 
