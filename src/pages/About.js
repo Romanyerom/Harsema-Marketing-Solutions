@@ -59,19 +59,19 @@ const About = () => {
           <div style={styles.teamMember}>
             {/* CEO */}
             <img src={teamMember1} alt="Roman Zerihun" style={styles.teamImage} />
-            <h3 style={styles.teamName}>John Doe</h3>
+            <h3 style={styles.teamName}>Roman Zerihun</h3>
             <p style={styles.teamPosition}>CEO</p>
           </div>
           <div style={styles.teamMember}>
             {/* Chief Marketing Officer */}
             <img src={teamMember2} alt="Sinework Adnew" style={styles.teamImage} />
-            <h3 style={styles.teamName}>Jane Smith</h3>
+            <h3 style={styles.teamName}>Sinework Zerihun</h3>
             <p style={styles.teamPosition}>Chief Marketing Officer</p>
           </div>
           <div style={styles.teamMember}>
             {/* Head of Strategy */}
             <img src={teamMember3} alt="Bethelihem Erena" style={styles.teamImage} />
-            <h3 style={styles.teamName}>Emily Johnson</h3>
+            <h3 style={styles.teamName}>Bethelihem Erena</h3>
             <p style={styles.teamPosition}>Head of Strategy</p>
           </div>
         </div>
