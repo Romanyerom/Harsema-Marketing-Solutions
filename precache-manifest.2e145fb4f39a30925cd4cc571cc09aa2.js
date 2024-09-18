@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35e01da5a1564d5c820a0666c2ea4fe9",
+    "revision": "d4508549f74f5651cca66ced79baf83e",
     "url": "/harsema-marketing-solutions/index.html"
   },
   {
-    "revision": "06ab9e4aba5465cc4e9d",
+    "revision": "980553902f1fad0d4431",
     "url": "/harsema-marketing-solutions/static/css/main.177965d3.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/harsema-marketing-solutions/static/js/2.c0d54e91.chunk.js"
   },
   {
-    "revision": "06ab9e4aba5465cc4e9d",
-    "url": "/harsema-marketing-solutions/static/js/main.8d9cf95b.chunk.js"
+    "revision": "980553902f1fad0d4431",
+    "url": "/harsema-marketing-solutions/static/js/main.a1952d3e.chunk.js"
   },
   {
     "revision": "bd3529ad6fca0a50f752",
