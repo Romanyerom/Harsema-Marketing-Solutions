@@ -20,7 +20,8 @@ The website uses the following technologies:
 Folder Structure
 - /src: Contains all the source code for the website.
   - /assets: Images and other assets.
-  - /components: React components for different sections (Home, About, Services, Contact, Subscribe).
+  - /pages: React components for different sections (Home, About, Services, Contact, Subscribe).
+  - /components: Header and Footer files
 - /public: Public files and index.html.
 
 Setup Instructions
