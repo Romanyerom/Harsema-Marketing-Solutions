@@ -83,7 +83,7 @@ const About = () => {
 const styles = {
   container: {
     fontFamily: 'Arial, sans-serif',
-    backgroundColor: '#f7f7f7',
+    backgroundColor: '#e3d8e4',
     padding: '20px',
   },
   historySection: {
@@ -113,12 +113,13 @@ const styles = {
   },
   section: {
     marginBottom: '40px',
-    textAlign: 'justify',
+    textAlign: 'center',
   },
   heading: {
     fontSize: '2.5rem',
-    color: '#4B0082', // Dark purple
+    color: '#56265c', // Dark purple
     marginBottom: '20px',
+    textAlign: 'center',
   },
   text: {
     fontSize: '1.2rem',
