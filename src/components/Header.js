@@ -36,6 +36,7 @@ const styles = {
   logoContainer: {
     display: 'flex',
     alignItems: 'center',
+    color: '#56265c',
   },
   logo: {
     height: '60px',
