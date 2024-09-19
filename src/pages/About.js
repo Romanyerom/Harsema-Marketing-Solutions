@@ -13,9 +13,8 @@ const About = () => {
       {/* Company History Section */}
       <section style={styles.historySection}>
         <div style={styles.imageSection}>
-          {/* Two images on the left */}
+          {/* image on the left */}
           <img src={picture1} alt="Company Picture 1" style={styles.image} />
-          <img src={picture2} alt="Company Picture 2" style={styles.image} />
         </div>
         <div style={styles.textSection}>
           <h2 style={styles.heading}>Company History</h2>
@@ -114,7 +113,7 @@ const styles = {
   },
   section: {
     marginBottom: '40px',
-    textAlign: 'center',
+    textAlign: 'justify',
   },
   heading: {
     fontSize: '2.5rem',
