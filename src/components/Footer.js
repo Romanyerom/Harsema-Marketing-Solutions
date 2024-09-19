@@ -13,7 +13,7 @@ const Footer = () => {
 
 const styles = {
   footer: {
-    backgroundColor: '#4B0082', // Dark purple background
+    backgroundColor: '#56265c', // Dark purple background
     color: '#fff',
     textAlign: 'center',
     padding: '10px 0',
