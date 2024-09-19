@@ -85,7 +85,7 @@ const Services = () => {
 const styles = {
   container: {
     fontFamily: 'Arial, sans-serif',
-    backgroundColor: '#f7f7f7',
+    backgroundColor: '#e3d8e4',
     padding: '20px',
     lineHeight: '1.6',
   },
@@ -94,7 +94,7 @@ const styles = {
   },
   mainHeading: {
     fontSize: '2.5rem',
-    color: '#4B0082', // Dark purple
+    color: '#56265c', // Dark purple
     marginBottom: '20px',
     textAlign: 'center',
   },
@@ -107,7 +107,7 @@ const styles = {
   },
   heading: {
     fontSize: '2rem',
-    color: '#4B0082',
+    color: '#56265c',
     marginBottom: '10px',
     textAlign: 'center',
   },
