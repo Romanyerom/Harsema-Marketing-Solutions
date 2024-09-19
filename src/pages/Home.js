@@ -1,6 +1,6 @@
 import React from 'react';
 
-import marketingImage from '../assets/Logo.JPG';
+import marketingImage from '../assets/Logo.jpg';
 
 const Home = () => {
   return (
