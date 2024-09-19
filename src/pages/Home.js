@@ -52,6 +52,7 @@ const styles = {
   title: {
     fontSize: '2.5rem',
     margin: 0,
+    color: 'white',
   },
   contentSection: {
     display: 'flex',
