@@ -19,8 +19,7 @@ const Home = () => {
         <div style={styles.textSection}>
           {/* Seth Godin Quote */}
           <h2 style={styles.quote}>
-            "Marketing is no longer about the stuff that you make, but about the stories you tell."
-            <br />– Seth Godin
+            "Marketing is no longer about the stuff that you make, but about the stories you tell." – Seth Godin
           </h2>
 
           {/* Our Promise Section */}
@@ -75,7 +74,7 @@ const styles = {
   },
   quote: {
     fontSize: '2rem',
-    color: '#4B0082',  // Dark Purple for the quote
+    color: '#56265c',  // Dark Purple for the quote
     marginBottom: '20px',
     fontWeight: 'bold',
   },
