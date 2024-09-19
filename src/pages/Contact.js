@@ -43,7 +43,7 @@ const styles = {
     fontFamily: 'Arial, sans-serif',
     backgroundColor: '#e3d8e4',
     padding: '40px 20px',
-    textAlign: 'justify',
+    textAlign: 'center',
     lineHeight: '1.6',
   },
   heading: {
