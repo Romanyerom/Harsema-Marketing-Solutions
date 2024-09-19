@@ -29,7 +29,7 @@ const styles = {
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '10px 20px',
-    backgroundColor: '#4B0082', // Dark purple background
+    backgroundColor: '#56265c', // Dark purple background
     color: '#fff',
     boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)', // Add a slight shadow
   },
@@ -53,7 +53,7 @@ const styles = {
     transition: 'background-color 0.3s ease',
   },
   navLinkHover: {
-    backgroundColor: '#3A006A', // Darker purple on hover
+    backgroundColor: '#56265c', // Darker purple on hover
   },
 };
 
