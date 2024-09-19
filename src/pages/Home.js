@@ -40,13 +40,13 @@ const Home = () => {
 const styles = {
   container: {
     fontFamily: 'Arial, sans-serif',
-    backgroundColor: '#f7f7f7',
+    backgroundColor: '#e3d8e4',
     padding: '20px',
     textAlign: 'center',
   },
   header: {
     padding: '20px',
-    backgroundColor: '#4B0082',  // Dark Purple
+    backgroundColor: '#56265c',  // Dark Purple
     color: 'white',
     marginBottom: '20px',
   },
@@ -81,7 +81,7 @@ const styles = {
   },
   subheading: {
     fontSize: '2rem',
-    color: '#4B0082',  // Dark Purple
+    color: '#56265c',  // Dark Purple
     marginBottom: '10px',
   },
   text: {
