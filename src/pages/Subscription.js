@@ -72,7 +72,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh', // Full viewport height to center the box vertically
-    backgroundColor: '#f7f7f7',
+    backgroundColor: '#e3d8e4',
     padding: '20px',
   },
   box: {
@@ -112,7 +112,7 @@ const styles = {
   button: {
     padding: '15px',
     fontSize: '1rem',
-    backgroundColor: '#4B0082', // Dark purple for the button
+    backgroundColor: '#56265c', // Dark purple for the button
     color: '#fff',
     border: 'none',
     borderRadius: '5px',
